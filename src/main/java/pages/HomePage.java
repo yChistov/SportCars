@@ -35,9 +35,6 @@ public class HomePage {
         String stringResults = wait.until(ExpectedConditions.visibilityOf(searchStatus)).getText();
         String stringCount = stringResults.replaceAll("[^0-9]", "").replaceAll(" ", "");
         long intSub = Long.parseLong(stringCount);
-        System.out.println(intSub);
         return intSub > 1000000;
     }
 }
-// so i hear you. can you check the sound seetings?
-// pini@stampli.com
